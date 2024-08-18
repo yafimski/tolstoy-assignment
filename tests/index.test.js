@@ -1,11 +1,8 @@
 import { describe, it, expect } from "vitest";
 
-const PORT = process.env.PORT || 5000;
-const serverUrl = `http://localhost:${PORT}`;
-
 describe("POST /fetch-metadata", () => {
   it("should return metadata for valid URLs", async () => {
-    const response = await fetch(`${serverUrl}/fetch-metadata`, {
+    const response = await fetch("/fetch-metadata", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -44,7 +44,7 @@ export default function Form() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/fetch-metadata", {
+      const response = await fetch("/fetch-metadata", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
