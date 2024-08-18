@@ -1,0 +1,22 @@
+{
+  "name": "tolstoy",
+  "version": "1.0.0",
+  "description": "Tolstoy assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "cd ../client && npm run build"
+  },
+  "author": "Yafim Simanovsky",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "install": "^0.13.0",
+    "nodemon": "^2.0.22",
+    "npm": "^10.8.2"
+  },
+  "engines": {
+    "node": "18.16.0"
+  }
+}

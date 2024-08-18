@@ -1,0 +1,30 @@
+{
+  "name": "tolstoy-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run start --prefix server\"",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "start": "npm run start --prefix server",
+    "lint": "npm run lint --prefix client",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.16.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.24.7",
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@vitest/ui": "^2.0.5",
+    "jsdom": "^24.1.1",
+    "vitest": "^2.0.5"
+  }
+}
