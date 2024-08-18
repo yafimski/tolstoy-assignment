@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
 import InfoCard from "./InfoCard";
 
 export default function Form() {
@@ -92,13 +90,17 @@ export default function Form() {
             {urlChips.map((chip) => (
               <li key={chip} className="chip">
                 <span>{chip}</span>
-                <FontAwesomeIcon
+                <span
                   onClick={() => removeChip(chip)}
-                  icon={faXmarkCircle}
-                  className="nav-icon"
-                  tabIndex="0"
+                  onKeyDown={() => {
+                    return;
+                  }}
+                  className="chipIcon"
                   aria-hidden="false"
-                />
+                  style={{ cursor: "pointer", fontSize: "16px" }}
+                >
+                  &#x2716;
+                </span>
               </li>
             ))}
           </ul>

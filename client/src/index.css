@@ -97,17 +97,15 @@ form > button:hover {
   font-size: 1rem;
 }
 
-.chip svg {
+.chipIcon {
   font-size: 1.2rem;
-  fill: #3270d1;
   cursor: pointer;
   transition: fill 0.2s;
   margin-left: 0.5rem;
 }
 
-.chip svg:hover {
-  fill: #2857a3;
-  transition: all 0.2s;
+.chipIcon:hover {
+  color: white;
 }
 
 input {
