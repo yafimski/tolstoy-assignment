@@ -7,4 +7,9 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
   },
+  build: {
+    rollupOptions: {
+      external: ["@fortawesome/react-fontawesome"],
+    },
+  },
 });
